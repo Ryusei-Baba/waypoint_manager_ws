@@ -1,0 +1,27 @@
+waypoint_server:
+  scale: 1
+  position:
+    x: 1
+    y: 2
+    z: 3
+  euler_angles:
+    x: 0
+    y: 0
+    z: 1.57
+  waypoints:
+    - id: 1
+      position:
+        x: -2.384186e-07
+        y: 0
+        z: 0
+      euler_angles:
+        x: -0
+        y: 0
+        z: -0
+      properties:
+        - key: stop
+          value: true
+        - key: goal_radius
+          value: 1.0
+      connections:
+        - 2
