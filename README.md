@@ -4,7 +4,7 @@
 roslaunch waypoint_server waypoint_server.launch 
 ```
 ```
-roslaunch orne_navigation_executor record_waypoints_viz.launch map_file:=/home/ryusei/orne_ws/maps/tsudanuma/220825/220825f3.yaml
+roslaunch orne_navigation_executor play_waypoints_nav_alpha.launch map_file:=/home/ryusei/orne_ws/maps/tsudanuma/220825/220825f3.yaml
 ```
 ***
 ## setup(確認用)
