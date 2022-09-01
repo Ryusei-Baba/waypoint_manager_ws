@@ -33,15 +33,16 @@ code play_waypoints_nav_common.launch
     <arg name="map_file"      value="$(arg map_file)"/>
     <arg name="init_pos_file" value="$(arg init_pos_file)"/>
   </include>
-<!-- 
+ 
   <node name="waypoints_nav" pkg="fulanghua_waypoints_nav" type="waypoints_nav" output="screen">
     <param name="filename" value="$(arg waypoints_file)"/>
     <param name="dist_err" value="$(arg dist_err)"/>
   </node>
- -->
+ <!--
   <node name="tsukuba_challenge_strategy" pkg="orne_strategy" type="tsukuba_challenge.py" output="screen">
     <param name="filename"      value="$(arg suspend_file)"/>
   </node>
+  -->
 </launch>
 ```
 ***
@@ -133,7 +134,7 @@ code nav_static_map.launch
     <arg name="init_pos_file" value="$(arg init_pos_file)"/>
   </include>
 
-  <node pkg="rviz" type="rviz" name="rviz" args="-d $(find orne_navigation_executor)/rviz_cfg/nav_manager_v3.rviz"/>
+  <node pkg="rviz" type="rviz" name="rviz" args="-d $(find orne_navigation_executor)/rviz_cfg/nav.rviz"/>
 
 </launch>
 ```
