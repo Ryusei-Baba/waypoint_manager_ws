@@ -6,12 +6,13 @@ roslaunch waypoint_server waypoint_server.launch
 ```
 roslaunch orne_navigation_executor record_waypoints_viz.launch map_file:=/home/ryusei/orne_ws/maps/tsudanuma/220825f3.yaml
 ```
-
+***
 ## setup(確認用)
 ```
 cd orne_ws/src/
 git clone git@github.com:Ryusei-Baba/waypoint_manager.git
 ```
+***
 ```
 roscd orne_navigation_executor/launch/
 code play_waypoints_nav_common.launch
@@ -43,6 +44,7 @@ code play_waypoints_nav_common.launch
   </node>
 </launch>
 ```
+***
 ```
 roscd waypoint_server/config/routes/
 cp test.yaml tsudanuma.yaml
@@ -69,6 +71,7 @@ route_file: $(find waypoint_server)/config/routes/tsudanuma.yaml
 enable_loop: true
 debug: false
 ```
+***
 ```
 roscd waypoint_server/config/waypoints/
 cp test.yaml tsudanuma.yaml
@@ -103,6 +106,7 @@ waypoint_server:
       connections:
         - 2
 ```
+***
 ```
 roscd orne_navigation_executor/launch/
 code nav_static_map.launch
@@ -133,6 +137,7 @@ code nav_static_map.launch
 
 </launch>
 ```
+***
 ```
 source ~/.bashrc
 cd orne_ws/
