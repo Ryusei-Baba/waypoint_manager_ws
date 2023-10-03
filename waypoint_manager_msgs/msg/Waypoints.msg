@@ -1,2 +1,0 @@
-WaypointsInfo info
-Waypoint[] waypoints
